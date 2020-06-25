@@ -69,6 +69,7 @@
 
 .sns i {
   padding: 10px;
+  cursor: pointer;
 }
 
 /* Toggle Button */
@@ -78,50 +79,28 @@
 
 /* Small Screen */
 @media screen and (max-width: 768px) {
-  #navbar .container {
-    display: flex;
-  }
-
-  /* menu */
-
-  .container .menu {
-    width: 100%;
-    display: none;
-    width: 100%;
-    margin-bottom: 28px;
-  }
-
-  .menu ul {
-    height: 250px;
+  .container {
     display: flex;
     flex-direction: column;
   }
-
-  .menu ul a {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-  }
-  .menu ul a:hover {
-    border-radius: 4px;
+  .logo,
+  .menu {
+    padding-bottom: 20px;
   }
 
-  /* sns */
-  .sns {
-    display: none;
-    margin-bottom: 0;
-    justify-content: center;
-  }
-
-  .toggleBtn {
-    display: block;
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--text-color);
-  }
-
-  .menu.active {
+  .menu {
+    height: 250px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    text-align: center;
   }
 }
