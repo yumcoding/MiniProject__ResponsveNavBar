@@ -72,10 +72,15 @@
 /* Toggle Button */
 .toggleBtn {
   display: none;
+  position: absolute;
+  right: 32px;
 }
 
 /* Small Screen */
 @media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
   #navbar .menu {
     display: none;
     height: 250px;
@@ -99,5 +104,10 @@
     font-size: 20px;
     text-decoration: none;
     color: var(--text-color);
+  }
+
+  #navbar .menu.active,
+  #navbar .sns.active {
+    display: flex;
   }
 }
