@@ -41,12 +41,12 @@
 
 /* Menu */
 
-#navbar .container .menu ul {
+#navbar .container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu ul a {
+.menu a {
   padding: 15px 20px;
   font-size: 15px;
   font-weight: 500;
@@ -54,20 +54,21 @@
   color: var(--text-color);
 }
 
-.menu ul a:hover {
+.menu a:hover {
   background-color: var(--accent-color);
   border-radius: 8px;
 }
 
 /* SNS */
 
-#navbar .container .sns{
-    display:flex;
+#navbar .container .sns {
+  display: flex;
+  flex-direction: row;
   font-size: 17px;
 }
 
-.sns i{
-    padding: 10px;
+.sns i {
+  padding: 10px;
 }
 
 /* Toggle Button */
@@ -83,14 +84,14 @@
 
   /* menu */
 
-  .container .navbar__column.menu {
+  .container .menu {
     width: 100%;
     display: none;
     width: 100%;
     margin-bottom: 28px;
   }
 
-  .navbar__column.menu ul {
+  .menu ul {
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -107,21 +108,20 @@
   }
 
   /* sns */
-  .navbar__column.sns {
+  .sns {
     display: none;
     margin-bottom: 0;
-    display: flex;
     justify-content: center;
   }
-  .sns i {
-    padding-left: 0;
-  }
-/* 
-  /* ToggleButton */
+
   .toggleBtn {
     display: block;
     font-size: 20px;
     text-decoration: none;
     color: var(--text-color);
-  } */
+  }
+
+  .menu.active {
+    display: flex;
+  }
 }
