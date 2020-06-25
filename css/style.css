@@ -1,0 +1,67 @@
+@import "reset.css";
+
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: #d49466;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#navbar {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#navbar .container {
+  padding: 20px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+
+#navbar .container .logo {
+  font-size: 25px;
+}
+
+.logo i {
+  color: var(--accent-color);
+  font-size: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+/* Menu */
+
+#navbar .container .menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu ul a {
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.menu ul a:hover {
+  background-color: var(--accent-color);
+  border-radius: 8px;
+}
+
+/* sns */
+
+#navbar .container .sns i {
+  font-size: 17px;
+  padding-left: 20px;
+}
