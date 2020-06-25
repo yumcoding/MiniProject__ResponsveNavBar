@@ -61,9 +61,13 @@
 
 /* SNS */
 
-#navbar .container .sns i {
+#navbar .container .sns{
+    display:flex;
   font-size: 17px;
-  padding: 10px;
+}
+
+.sns i{
+    padding: 10px;
 }
 
 /* Toggle Button */
@@ -103,21 +107,21 @@
   }
 
   /* sns */
-  .container .navbar__column.sns {
+  .navbar__column.sns {
+    display: none;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
   }
   .sns i {
-    display: none;
     padding-left: 0;
   }
-
+/* 
   /* ToggleButton */
   .toggleBtn {
     display: block;
     font-size: 20px;
     text-decoration: none;
     color: var(--text-color);
-  }
+  } */
 }
