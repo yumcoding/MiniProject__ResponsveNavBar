@@ -13,18 +13,15 @@
 #navbar {
   background-color: var(--background-color);
   color: var(--text-color);
-}
-
-#navbar .container {
-  padding: 20px 28px;
   display: flex;
+  padding: 20px 28px;
   justify-content: space-between;
   align-items: center;
 }
 
 /* Logo */
 
-#navbar .container .logo {
+#navbar .logo {
   font-size: 25px;
 }
 
@@ -41,7 +38,7 @@
 
 /* Menu */
 
-#navbar .container .menu {
+#navbar .menu {
   display: flex;
   justify-content: space-around;
 }
@@ -61,7 +58,7 @@
 
 /* SNS */
 
-#navbar .container .sns {
+#navbar .sns {
   display: flex;
   flex-direction: row;
   font-size: 17px;
@@ -79,21 +76,14 @@
 
 /* Small Screen */
 @media screen and (max-width: 768px) {
-  .container {
-    display: flex;
-  }
-
   .menu {
-    display: none !important;
+    display: none;
     height: 250px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  /* .menu li {
-  
-  } */
 
   .menu a {
     width: 100%;
@@ -102,8 +92,9 @@
   }
 
   .sns {
-    display: none !important;
+    display: none;
   }
+
   .toggleBtn {
     display: block;
     font-size: 20px;
