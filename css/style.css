@@ -76,22 +76,21 @@
 
 /* Small Screen */
 @media screen and (max-width: 768px) {
-  .menu {
+  #navbar .menu {
     display: none;
     height: 250px;
     width: 100%;
-    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .menu a {
-    width: 100%;
-    display: block;
     text-align: center;
   }
 
-  .sns {
+  .menu a {
+    display: block;
+  }
+
+  #navbar .sns {
     display: none;
   }
 
